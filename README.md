@@ -3,4 +3,4 @@
 
 **Fields:** *Passage*, *Book* (HHG, REU, LUE), *Page Number(s)*
 
-Some page numbers missing and also a few of the notable passages from HHG
+*Some page numbers missing and also a few of the notable passages from HHG
