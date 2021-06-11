@@ -14,3 +14,5 @@ def thought():
 
     nquotes = len(quotes)
     return quotes[random.randint(0, nquotes - 1)]
+
+
