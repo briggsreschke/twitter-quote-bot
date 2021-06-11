@@ -15,4 +15,6 @@ while(thought):
     thought = thought[len(line)+1:]
     
     print(line)
+    
+    
 
