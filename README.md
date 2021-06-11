@@ -6,7 +6,7 @@
 
 #### deep_thought/ is python scripts to pretty print random quotes from a txt file
 
-* Can be any list of quotes  
+* Can be any list of quotes
 
 
 
