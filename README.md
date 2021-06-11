@@ -4,7 +4,7 @@
 * Left out some quotes from HHG on purpose but will probably add them at some point
 * Removed page numbers since not consistent across editions
 
-#### deep_thought/ is python scripts to pretty print random quotes from a txt file (.bashrc, twitterbot, ...) 
+#### deep_thought/ is python scripts to pretty print random quotes from a txt file
 
 * Can be any list of quotes  
 
