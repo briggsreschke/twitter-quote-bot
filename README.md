@@ -1,6 +1,9 @@
-# Hitchhiker-s-Guide-to-the-Galaxy
-### Comma delimited database of Douglas Adams Quotes from the first three books
+#### HHG.CSV is a comma delimited database of Douglas Adams Quotes from the first three books 
+(HHG, REU, LUE)
 
-**Fields:** *Passage*, *Book* (HHG, REU, LUE), *Page Number(s)*
+*Left some quotes from HHG out on purpose but will probably add them.    
+*Removed page numbers since not consistent across editions
 
-*Some page numbers missing and also a few of the notable passages from HHG
+#### deep_thought/ is python scripts to pretty print random quotes (.bashrc, twitterbot, ...) 
+
+*Can be any list of quotes
