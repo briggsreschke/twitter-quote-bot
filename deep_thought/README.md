@@ -6,4 +6,4 @@ I use them with .bashrc and for a twitter bot
 **quoted.py** (pretty prints it, adjusting for terminal cols)  
 **deep_thought.py** (grabs a random quote from **txt file**)  
 
-On twitter @zaphodbeeblebot  
+On Twitter @zaphodbeeblebot  
