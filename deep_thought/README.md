@@ -1,4 +1,4 @@
-#### Print a randomly selected quote to command line ... could be any quote
+#### Print a randomly selected quote to terminal ... could be any quote
 
 I include in in .bashrc and for a twitter bot
 
