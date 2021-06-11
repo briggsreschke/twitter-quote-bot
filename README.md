@@ -1,4 +1,4 @@
-#### HHG.CSV is a comma delimited database of Douglas Adams Quotes from the first three books 
+#### HHG.csv is a comma delimited database of Douglas Adams Quotes from the first three books 
 (HHG, REU, LUE)
 
 *Left some quotes from HHG out on purpose but will probably add them.    
