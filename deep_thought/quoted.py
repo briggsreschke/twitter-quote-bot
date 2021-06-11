@@ -14,5 +14,5 @@ while(thought):
         line = line.rsplit(' ', 1)[0]
     thought = thought[len(line)+1:]
     
-print(line)
+    print(line)
 
