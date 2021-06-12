@@ -10,7 +10,7 @@ thought = thought()
 
 while(thought):
     line = thought[:cols-1]
-    if(len(line) >= cols-1):
+    if(len(line) == cols-1):
         line = line.rsplit(' ', 1)[0]
     print(line) 
     
