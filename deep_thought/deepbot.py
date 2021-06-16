@@ -2,7 +2,7 @@ from deepthought import *
 
 # Main ----
 LAST_N_TWEETS = 10
-FILE = "/home/briggs/Twitter/deepthought/bot/42.txt"
+FILE = "42.txt"
 
 def main():  
     client = create_api()             
