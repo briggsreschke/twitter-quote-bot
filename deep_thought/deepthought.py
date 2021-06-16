@@ -17,7 +17,7 @@ def create_api():
     return tweepy.API(auth)
 
 
-# Get LAST_N_TWEETS from timeline so that quotes aren't posted more than once in succession
+# Get LAST_N_TWEETS from timeline so that quotes aren't posted more than N times in succession
 
 def get_timeline_history(client, LAST_N_TWEETS):
 
