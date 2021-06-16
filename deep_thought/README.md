@@ -1,3 +1,4 @@
-**Print a randomly selected quote to terminal** ... minimal ... hmmm ... could be any list of quotes ...
+**Thought Bot** ... minimal ... twitter bot to post unembellished quotes
+
 
 Twitter [@douglasadamsbot](https://twitter.com/douglasadamsbot)
