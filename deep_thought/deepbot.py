@@ -2,7 +2,7 @@ from deepthought import *
 
 # Main ----
 LAST_N_TWEETS = 10
-FILE = "42.txt"
+FILE = "txt_file_that_holds_quotes"
 
 def main():  
     client = create_api()             
