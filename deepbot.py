@@ -23,7 +23,7 @@ def parser(line):
         line = line.replace('/', '\n')
 
     #strip trailing \n and return
-    return(line.rstrip('\n'))
+    return(line.rstrip())
 
 
 # Main loop           
