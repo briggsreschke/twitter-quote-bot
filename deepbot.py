@@ -26,10 +26,8 @@ def parser(line):
 
 # Main loop           
 def main():  
-
     client = create_api()             
 
-    
     timeline_history = get_timeline_history(client, LAST_N_TWEETS)  
     quotes = get_quotes(get_path(), parser)
 
