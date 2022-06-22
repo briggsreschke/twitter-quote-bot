@@ -14,7 +14,6 @@ def get_path():
     return path
 
 # Parse quotes so they match timeline and tweet pretty
-
 def parser(line):
 
     if line.find('\\n'): # Enforce newline for quotes with paragraphs
@@ -25,9 +24,7 @@ def parser(line):
     #strip trailing \n and return
     return(line)
 
-
 # Main loop           
-
 def main():  
 
     client = create_api()             
@@ -36,21 +33,11 @@ def main():
     timeline_history = get_timeline_history(client, LAST_N_TWEETS)  
     quotes = get_quotes(get_path(), parser)
 
-    if _TESTING_ == True:
-        while(True):
-            os.system('clear')
-            tweet = get_random(quotes)
-            while(tweet in timeline_history):
-                print("FLAGED:\n" + tweet + '\n')
-                tweet = get_random(quotes)
-            print(tweet)
-            input('')
-    else:  
+    tweet = get_random(quotes)
+    while(tweet in timeline_history):
         tweet = get_random(quotes)
-        while(tweet in timeline_history):
-            tweet = get_random(quotes)
 
-        client.update_status(tweet)
+    client.update_status(tweet)
 
         
 if __name__ == "__main__":
