@@ -32,7 +32,7 @@ def get_quotes(fname, parser):
     quotes = []
     
     with open(fname, 'r') as file:      
-        quotes = [parser(line) for line in file]
+        quotes = [parser(line.rstrip()) for line in file]
             
     return quotes     
 
