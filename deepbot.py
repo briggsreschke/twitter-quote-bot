@@ -47,7 +47,6 @@ def get_quotes(fname, parser):
 
 def get_random(quotes):
 
-    random.shuffle(quotes)
     quote = quotes[random.randint(0, len(quotes) - 1)]
     return(quote)
 
@@ -91,7 +90,8 @@ def main():
     diff = list(set(quotes)-set(history))
 
     # random quote and tweet
-    tweet = diff[random.randint(0, len(diff) - 1)]
+    tweet = get_random(diff)
+    
     if TESTING == True:
         print(tweet)
     else:
