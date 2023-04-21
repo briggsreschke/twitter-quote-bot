@@ -10,8 +10,9 @@ from auth import (
     ACCESS_TOKEN_SECRET
 )
 
+TWITTER_HANDLE = "HHGuideBot"
 LAST_N_TWEETS =40 
-FILE = "/Projects/Twitter/bots/hhg/42.txt"
+QUOTES = "Projects/Twitter/bots/hhg/42.txt"
 TESTING = True
 
 
@@ -42,8 +43,8 @@ def get_quotes(fname, parser):
         quotes = [parser(line).rstrip() for line in file]
     return quotes
 
-# Return a random quote to tweet from list of quotes
 
+# Return a random quote to tweet from list of quotes
 
 def get_random(quotes):
 
@@ -55,13 +56,12 @@ def get_random(quotes):
 def path():
     
     if platform.system() == 'Linux':
-        path = "/home/briggs" + FILE
+        path = "/home/briggs" + QUOTES
     else:
-        path = "/Users/briggs" + FILE
+        path = "/Users/briggs" + QUOTES
     return path
 
 # Parse quotes so they match timeline newlines, etc..
-
 
 def parser(line):
     
@@ -73,15 +73,15 @@ def parser(line):
     # strip trailing \n and return
     return(line.rstrip('\n'))
 
-# Main loop
 
+# Main loop
 
 def main():
     # create API
     client = create_api()
 
     # get last n tweets from timeline
-    history = get_timeline_history(client, LAST_N_TWEETS, 'HHGuideBot')
+    history = get_timeline_history(client, LAST_N_TWEETS, TWITTER_HANDLE)
     
     # read quotes database
     quotes = get_quotes(path(), parser)
