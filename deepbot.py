@@ -56,9 +56,9 @@ def get_random(quotes):
 def path():
     
     if platform.system() == 'Linux':
-        path = "/home/briggs" + QUOTES
+        path = "/home/briggs/" + QUOTES
     else:
-        path = "/Users/briggs" + QUOTES
+        path = "/Users/briggs/" + QUOTES
     return path
 
 # Parse quotes so they match timeline newlines, etc..
