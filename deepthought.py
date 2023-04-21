@@ -76,16 +76,16 @@ def parser(line):
 # Main loop
 
 def main():
-    # create API
+    # create tweepy api
     client = create_api()
 
     # get last n tweets from timeline
     history = get_timeline_history(client, LAST_N_TWEETS, TWITTER_HANDLE)
     
-    # read quotes database
+    # read full quotes database
     quotes = get_quotes(path(), parser)
     
-    # get quotes that are not in timeline history (last n tweets)
+    # get quotes that are not in last_n_tweets
     diff = list(set(quotes)-set(history))
 
     # random quote and tweet
