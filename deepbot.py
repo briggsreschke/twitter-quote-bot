@@ -54,7 +54,7 @@ def get_random(quotes):
 
 # Get path for system testing/running on
 def path():
-
+    
     if platform.system() == 'Linux':
         path = "/home/briggs" + FILE
     else:
@@ -65,7 +65,7 @@ def path():
 
 
 def parser(line):
-
+    
     if line.find('\\n'):  # Enforce newline for quotes with paragraphs
         line = line.replace('\\n', '\n')
     if line.find('/'):  # Poetry line seperator
@@ -83,8 +83,10 @@ def main():
 
     # get last n tweets from timeline
     history = get_timeline_history(client, LAST_N_TWEETS, 'HHGuideBot')
+    
     # read quotes database
     quotes = get_quotes(path(), parser)
+    
     # get quotes that are not in timeline history (last n tweets)
     diff = list(set(quotes)-set(history))
 
