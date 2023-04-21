@@ -16,6 +16,8 @@ QUOTES = "Projects/Twitter/bots/hhg/42.txt"
 TESTING = True
 
 
+# Create tweepy api
+
 def create_api():
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -30,6 +32,7 @@ def get_timeline_history(client, LAST_N_TWEETS, twitter_name):
 
     tweets = client.user_timeline(
         screen_name=twitter_name, count=LAST_N_TWEETS, tweet_mode="extended")
+    
     return [tweet.full_text.rstrip() for tweet in tweets]
 
 
