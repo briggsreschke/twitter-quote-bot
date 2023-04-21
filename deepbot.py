@@ -17,7 +17,6 @@ TESTING = True
 
 
 # Create tweepy api
-
 def create_api():
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -26,8 +25,7 @@ def create_api():
     return tweepy.API(auth)
 
 
-# Get LAST_N_TWEETS from timeline so that quotes aren't posted more than once in succession
-
+# Get last_number_of_tweets timeline
 def get_timeline_history(client, LAST_N_TWEETS, twitter_name):
 
     tweets = client.user_timeline(
@@ -36,8 +34,7 @@ def get_timeline_history(client, LAST_N_TWEETS, twitter_name):
     return [tweet.full_text.rstrip() for tweet in tweets]
 
 
-# Read quotes in from a .txt file and prettyfy
-
+# Read quotes in from a .txt file and format
 def get_quotes(fname, parser):
 
     quotes = []
@@ -48,7 +45,6 @@ def get_quotes(fname, parser):
 
 
 # Return a random quote to tweet from list of quotes
-
 def get_random(quotes):
 
     quote = quotes[random.randint(0, len(quotes) - 1)]
