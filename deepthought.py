@@ -30,7 +30,7 @@ def get_timeline_history(client, LAST_N_TWEETS, twitter_name):
 
     tweets = client.user_timeline(
         screen_name=twitter_name, count=LAST_N_TWEETS, tweet_mode="extended")
-    
+     
     return [tweet.full_text.rstrip() for tweet in tweets]
 
 
@@ -38,12 +38,12 @@ def get_timeline_history(client, LAST_N_TWEETS, twitter_name):
 def get_quotes(fname, parser):
     
     with open(fname, 'r') as file:
-        return([parser(line).rstrip() for line in file])
+        return [parser(line).rstrip() for line in file]
 
     
 # Return a random quote to tweet from list of quotes
 def get_random(quotes):
-    return(quotes[random.randint(0, len(quotes) - 1)])
+    return quotes[random.randint(0, len(quotes) - 1)]
 
 
 # Get path for system testing/running on
