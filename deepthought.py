@@ -36,19 +36,14 @@ def get_timeline_history(client, LAST_N_TWEETS, twitter_name):
 
 # Read quotes in from a .txt file and format
 def get_quotes(fname, parser):
-
-    quotes = []
-
+    
     with open(fname, 'r') as file:
-        quotes = [parser(line).rstrip() for line in file]
-    return quotes
+        return([parser(line).rstrip() for line in file])
 
-
+    
 # Return a random quote to tweet from list of quotes
 def get_random(quotes):
-
-    quote = quotes[random.randint(0, len(quotes) - 1)]
-    return(quote)
+    return(quotes[random.randint(0, len(quotes) - 1)])
 
 
 # Get path for system testing/running on
@@ -79,11 +74,11 @@ def main():
     # create tweepy api
     client = create_api()
 
-    # get last n tweets from timeline
-    history = get_timeline_history(client, LAST_N_TWEETS, TWITTER_HANDLE)
-    
     # read full quotes database
     quotes = get_quotes(path(), parser)
+    
+    # get last n tweets from timeline
+    history = get_timeline_history(client, LAST_N_TWEETS, TWITTER_HANDLE)
     
     # get quotes that are not in last_n_tweets
     diff = list(set(quotes)-set(history))
