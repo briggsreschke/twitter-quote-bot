@@ -8,13 +8,12 @@ from auth import (
     CONSUMER_KEY,
     CONSUMER_SECRET,
     ACCESS_TOKEN,
-    ACCESS_TOKEN_SECRET,
-   
-    TWITTER_HANDLE,
-    LAST_N_TWEETS,
-    QUOTES_DATABASE
+    ACCESS_TOKEN_SECRET
 )
 
+TWITTER_HANDLE = 'HHGuideBot'
+LAST_N_TWEETS =40 
+QUOTES_DATABASE = 'Twitter/Hitch-Hiker-s-Guide-to-the-Galaxy/42.txt'
 TESTING = True
 
 
