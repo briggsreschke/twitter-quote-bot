@@ -52,7 +52,7 @@ def path():
     if platform.system() == 'Linux':
         return "/home/briggs/" + QUOTES
     else:
-        retUrn "/Users/briggs/" + QUOTES
+        return "/Users/briggs/" + QUOTES
         
 
 # Parse quotes so they match timeline newlines, etc..
@@ -81,7 +81,7 @@ def main():
     history = get_timeline_history(client, LAST_N_TWEETS, TWITTER_HANDLE)
     
     # get quotes that are not in last_n_tweets
-    diff = list(set(quotes)-set(history))
+    diff = list(set(quotes) - set(history))
 
     # random quote and tweet
     tweet = get_random(diff)
