@@ -1,3 +1,4 @@
+# bot/cron to random quotes to twitter timeline
 import random
 import tweepy
 import platform
