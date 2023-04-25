@@ -8,12 +8,13 @@ from auth import (
     CONSUMER_KEY,
     CONSUMER_SECRET,
     ACCESS_TOKEN,
-    ACCESS_TOKEN_SECRET
+    ACCESS_TOKEN_SECRET,
+   
+    TWITTER_HANDLE,
+    LAST_N_TWEETS,
+    QUOTES_DATABASE
 )
 
-TWITTER_HANDLE = "HHGuideBot"
-LAST_N_TWEETS =40 
-QUOTES = "Projects/Twitter/bots/hhg/42.txt"
 TESTING = True
 
 
@@ -51,9 +52,9 @@ def get_random(quotes):
 def path():
     
     if platform.system() == 'Linux':
-        return "/home/briggs/" + QUOTES
+        return "/home/briggs/" + QUOTES_DATABASE
     else:
-        return "/Users/briggs/" + QUOTES
+        return "/Users/briggs/" + QUOTES_DATABASE
         
 
 # Parse quotes so they match timeline newlines, etc..
