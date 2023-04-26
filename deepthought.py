@@ -65,8 +65,7 @@ def parser(line):
     if line.find('/'):  # Poetry line seperator
         line = line.replace('/', '\n')
 
-    # strip trailing \n and return
-    return(line.rstrip('\n'))
+    return line.rstrip()
 
 
 # Main loop
