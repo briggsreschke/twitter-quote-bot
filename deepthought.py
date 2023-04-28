@@ -13,7 +13,7 @@ from auth import (
 
 TWITTER_HANDLE = 'HHGuideBot'
 LAST_N_TWEETS =40 
-QUOTES_DATABASE = 'Projects/Twitter/bots/42.txt'
+QUOTES_DATABASE = '42.txt'
 TESTING = True
 
 
