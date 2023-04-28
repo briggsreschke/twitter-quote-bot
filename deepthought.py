@@ -47,15 +47,6 @@ def get_random(quotes):
     return quotes[random.randint(0, len(quotes) - 1)]
 
 
-# Get path for system testing/running on
-def path():
-    
-    if platform.system() == 'Linux':
-        return "/home/briggs/" + QUOTES_DATABASE
-    else:
-        return "/Users/briggs/" + QUOTES_DATABASE
-        
-
 # Parse quotes so they match timeline newlines, etc..
 def parser(line):
     
@@ -73,7 +64,7 @@ def main():
     client = create_api()
 
     # read full quotes database
-    quotes = get_quotes(path(), parser)
+    quotes = get_quotes(QUOTES_DATABASE, parser)
     
     # get last n tweets from timeline
     history = get_timeline_history(client, LAST_N_TWEETS, TWITTER_HANDLE)
