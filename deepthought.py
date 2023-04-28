@@ -57,7 +57,6 @@ def path():
         
 
 # Parse quotes so they match timeline newlines, etc..
-
 def parser(line):
     
     if line.find('\\n'):  # Enforce newline for quotes with paragraphs
@@ -69,7 +68,6 @@ def parser(line):
 
 
 # Main loop
-
 def main():
     # create tweepy api
     client = create_api()
