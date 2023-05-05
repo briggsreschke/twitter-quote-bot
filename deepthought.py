@@ -1,8 +1,6 @@
 # bot/cron for random quotes to twitter timeline
 import random
 import tweepy
-import platform
-import os
 
 from auth import (
     CONSUMER_KEY,
