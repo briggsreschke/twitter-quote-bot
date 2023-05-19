@@ -1,6 +1,6 @@
-### Hitchhiker's Guide to the Galaxy
+### Quote Bot ###
 
-A database of Douglas Adams quotes from the first three books (HHG, REU, LUE).  
-Twitter bot for tweeting random quotes from the database
+Is (deepthought.py) a basic random Twitter quote bot
+Here it is quoting from a database of Hitchiker's Guide to the Galaxy quotes (42.txt)
 
 Twitter [@HHGuideBot](https://twitter.com/HHGuideBot)
