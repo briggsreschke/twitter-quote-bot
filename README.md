@@ -1,4 +1,4 @@
-### Quote Bot ###
+### Deep Thought ###
 
 Is *deepthought.py*, a basic nonrepeating random quote bot for Twitter
 
