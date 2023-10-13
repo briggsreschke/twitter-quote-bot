@@ -10,7 +10,7 @@ from auth import (
 )
 
 TWITTER_HANDLE = 'HHGuideBot'
-LAST_N_TWEETS =40 # scale randomness
+LAST_N_TWEETS =40 # how random
 QUOTES_DATABASE = '42.txt'
 TESTING = True
 
